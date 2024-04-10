@@ -1,0 +1,21 @@
+#myhomebar {
+    background-color: yellowgreen;
+}
+
+#mymain {
+    background-color: green;
+}
+
+/**************** NAVBAR ****************/
+
+#mynavbar {
+    background-color: red;
+}
+
+.dropdown-toggle:after {
+    content: none
+}
+
+/**************** HOMEBAR ****************/
+
+/**************** MAIN ****************/
