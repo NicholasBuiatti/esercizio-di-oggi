@@ -1,0 +1,61 @@
+/*******************  NAVBAR  *******************/
+#mobile-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+#mynavbar {
+    background-color: crimson;
+}
+
+/*******************  MAIN  *******************/
+#mymain {
+    height: calc(100vh - 64px);
+    background-color: black;
+}
+
+#myhomebar {
+    width: 4rem;
+    background-color: yellowgreen;
+}
+
+/*******************  INFO  *******************/
+
+#info-pag {
+    width: calc(100% - 4rem);
+    background-color: blue;
+}
+
+#mycolorstudent {
+    background-color: brown;
+}
+/*******************  DATA  *******************/
+
+#mydata {
+    background-color: lightblue;
+}
+
+/*******************  DATA  *******************/
+#logo-table {
+    width: 1rem;
+    aspect-ratio: 1;
+}
+
+
+/*******************  MEDIA *******************/
+@media screen and (min-width:992px) {
+    #mymain {
+        height: calc(100vh - 53.5px);
+        background-color: red;
+    }
+
+    #myhomebar {
+        width: 8rem;
+        background-color: green;
+    }
+
+    #info-pag{
+        width: calc(100% - 8rem);
+    }
+
+}
