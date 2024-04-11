@@ -25,7 +25,11 @@
             <img src="./img/mobile-logo.png" alt="Logo Boolean Mobile" class="d-lg-none" id="mobile-logo">
             <img src="./img/logo.svg" alt="Logo Boolean" class="d-none d-lg-block px-1">
             <form class="d-flex col ms-2">
-                <input class="form-control me-2 shadow-none" type="search" placeholder="Scrivi qua quello che vuoi cercare" aria-label="Search">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="form-control me-2 shadow-none" type="search"
+                        placeholder="Scrivi qua quello che vuoi cercare" aria-label="Search">
+                </div>
             </form>
             <div class="col-1 col-lg-2 text-center">
                 <a href="#" class="d-none d-lg-inline link-secondary mx-2 link-underline-opacity-0">
@@ -48,7 +52,8 @@
                         </li>
                         <li>
                             <a class="dropdown-item" href="#">bo2</a>
-                        </li><li>
+                        </li>
+                        <li>
                             <a class="dropdown-item" href="#">bo3</a>
                         </li>
                     </ul>
@@ -88,9 +93,28 @@
 
             <!-------------- INFO -------------->
             <div class="row h-100 ms-0 px-0 overflow-scroll" id="info-pag">
-                <div class="row justify-content-between w-100 py-1 py-md-3 px-0 ms-0 text-white bg-primary" id="mycolorstudent">
+                <div class="row justify-content-between w-100 py-1 py-md-3 px-0 ms-0 text-white bg-primary"
+                    id="mycolorstudent">
                     <div class="col-12 col-md-2 order-md-1 py-2 py-md-0">
-                        <p class="mb-0">Nuovo studente</p>
+                        <span class="mb-0">Nuovo studente</span>
+                        <button class="btn btn-primary border border-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="row">
+                                    <p class="col-6">Nome</p>
+                                    <input type="text" placeholder="Pippo">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 py-2 py-md-0">
                         <div class="mb-2">
@@ -103,10 +127,16 @@
                             <span class="badge rounded-pill bg-primary d-md-none bg-dark opacity-75">
                                 <i class="fa-solid fa-plus"></i>
                             </span>
-                            <span class="badge rounded-pill bg-primary d-none d-md-inline-block bg-dark opacity-75">Boolean Mobile
+                            <span
+                                class="badge rounded-pill bg-primary d-none d-md-inline-block bg-dark opacity-75">Boolean
+                                Mobile
                                 app</span>
-                            <span class="badge rounded-pill bg-primary d-none d-md-inline-block bg-dark opacity-75">Boolean Web app</span>
-                            <span class="badge rounded-pill bg-primary d-none d-md-inline-block bg-dark opacity-75">Boolean Blog app</span>
+                            <span
+                                class="badge rounded-pill bg-primary d-none d-md-inline-block bg-dark opacity-75">Boolean
+                                Web app</span>
+                            <span
+                                class="badge rounded-pill bg-primary d-none d-md-inline-block bg-dark opacity-75">Boolean
+                                Blog app</span>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 py-2 py-md-0">
@@ -258,23 +288,23 @@
 
                         <div class="card p-3">
                             <div class="card border-2">
-                            <img src="./img/stats.jpeg" class="card-img-top" alt="img Statistiche">
-                            <div class="card-body">
-                                <h5 class="card-title">Utenti attivi</h5>
-                                <p class="card-text">Utenti attivi nell'ultimo periodo</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Gennaio</li>
-                                <li class="list-group-item">Febbraio</li>
-                                <li class="list-group-item">Marzo</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Boolean</a>
-                                <a href="#" class="card-link">PSN</a>
+                                <img src="./img/stats.jpeg" class="card-img-top" alt="img Statistiche">
+                                <div class="card-body">
+                                    <h5 class="card-title">Utenti attivi</h5>
+                                    <p class="card-text">Utenti attivi nell'ultimo periodo</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Gennaio</li>
+                                    <li class="list-group-item">Febbraio</li>
+                                    <li class="list-group-item">Marzo</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Boolean</a>
+                                    <a href="#" class="card-link">PSN</a>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        
+
                     </div>
 
 
