@@ -4,36 +4,42 @@
     width: 3rem;
 }
 
-#mynavbar {
+/* #mynavbar {
     background-color: crimson;
-}
+} */
 
 /*******************  MAIN  *******************/
 #mymain {
     height: calc(100vh - 64px);
-    background-color: black;
+    background-color: rgba(248,249,250,255);
 }
 
 #myhomebar {
     width: 4rem;
-    background-color: yellowgreen;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: rgba(5,30,52,255);
+}
+
+.mybtn:hover {
+    background: rgba(255,255,255,0.5);
+    
 }
 
 /*******************  INFO  *******************/
 
 #info-pag {
     width: calc(100% - 4rem);
-    background-color: blue;
+    /* background-color: blue; */
 }
 
-#mycolorstudent {
+/* #mycolorstudent {
     background-color: brown;
-}
+} */
 /*******************  DATA  *******************/
 
-#mydata {
+/* #mydata {
     background-color: lightblue;
-}
+} */
 
 /*******************  DATA  *******************/
 #logo-table {
@@ -41,17 +47,14 @@
     aspect-ratio: 1;
 }
 
-
 /*******************  MEDIA *******************/
 @media screen and (min-width:992px) {
     #mymain {
         height: calc(100vh - 53.5px);
-        background-color: red;
     }
 
     #myhomebar {
         width: 8rem;
-        background-color: green;
     }
 
     #info-pag{
