@@ -26,11 +26,23 @@
 }
 
 /*******************  DATA  *******************/
-
-/*******************  DATA  *******************/
 #logo-table {
-    width: 1rem;
+    width: 1.5rem;
     aspect-ratio: 1;
+}
+
+.mybtnicon {
+    background-color: trasparent;
+    border: 1px solid rgba(0, 136, 255, 1);
+}
+
+.mybtnicon:hover {
+    background-color: rgba(0, 136, 255, 0.5);
+    color: white;
+}
+
+.offcanvas-size-lg {
+    --bs-offcanvas-width: min(100vw, 600px);
 }
 
 /*******************  MEDIA *******************/

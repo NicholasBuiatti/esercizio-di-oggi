@@ -97,11 +97,13 @@
                     id="mycolorstudent">
                     <div class="col-12 col-md-2 order-md-1 py-2 py-md-0">
                         <span class="mb-0">Nuovo studente</span>
+                        
+                        <!-------------- OFFCANVAS -------------->
                         <button class="btn btn-primary border border-2" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="fa-solid fa-plus"></i>
                         </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        <div class="offcanvas offcanvas-size-lg offcanvas-end" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
@@ -110,8 +112,79 @@
                             </div>
                             <div class="offcanvas-body">
                                 <div class="row">
-                                    <p class="col-6">Nome</p>
-                                    <input type="text" placeholder="Pippo">
+                                    <div class="col-12 col-md-6">
+                                        <p class="mb-2">Nome</p>
+                                    <input type="text" class="form-control shadow-none" placeholder="Pippo">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <p class="mb-2">Cognome</p>
+                                    <input type="text" class="form-control shadow-none" placeholder="Rossi">
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-4">
+                                        <p class="mb-2">email</p>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input class="form-control me-2 shadow-none" type="search"
+                                                placeholder="xxx@gmail.com" aria-label="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mt-4">
+                                        <p class="mb-2">Password</p>
+                                        <div class="input-group">
+                                            <input class="form-control me-2 shadow-none" type="password"
+                                                placeholder="" aria-label="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <p class="mb-2">Indirizzo</p>
+                                        <div class="input-group">
+                                            <input class="form-control me-2 shadow-none" type="text"
+                                                placeholder="" aria-label="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 mt-4">
+                                        <p class="mb-2">Città</p>
+                                        <div class="input-group">
+                                            <input class="form-control me-2 shadow-none" type="text"
+                                                placeholder="" aria-label="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 mt-4">
+                                        <div class="select-wrapper">
+                                            <label for="defaultSelect" class="mb-2">Stato</label>
+                                            <select id="defaultSelect" class="form-control shadow-none">
+                                              <option selected="" value="">Scegli un'opzione</option>
+                                              <option value="Value 1">Namek</option>
+                                              <option value="Value 2">Upsidedown</option>
+                                              <option value="Value 3">Casa tua</option>
+                                              <option value="Value 4">nel pc</option>
+                                              <option value="Value 5">bo</option>
+                                            </select>
+                                          </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 mt-4">
+                                        <p class="mb-2">CAP</p>
+                                        <div class="input-group">
+                                            <input class="form-control me-2 shadow-none" type="number"
+                                                placeholder="" maxlength="5" aria-label="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3 mt-4">
+                                        <label for="formFileMultiple" class="form-label">Foto</label>
+                                        <input class="form-control shadow-none" type="file" id="formFileMultiple" multiple>
+                                    </div>
+                                    <div class="form-check mt-4">
+                                        <input class="form-check-input shadow-none ms-0 me-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Spunta per continuare
+                                        </label>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="button" class="btn btn-primary">Salva</button>
+                                        <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -172,13 +245,12 @@
                                         <td class="text-center d-none d-md-table-cell">20%</td>
                                         <td class="text-center"><span class="badge bg-success">Success</span></td>
                                         <td class="text-center">
-                                            <button type="button" class="btn border border-3 text-secondary">
-                                                <i class="fa-solid fa-pen"></i>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
                                             </button>
-                                            <button type="button" class="btn border border-3 text-secondary">
-                                                <i class="fa-solid fa-trash"></i>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
                                             </button>
-
                                         </td>
                                     </tr>
                                     <tr>
@@ -189,8 +261,14 @@
                                         <td class="text-center d-none d-md-table-cell">01/01/0001</td>
                                         <td class="text-center d-none d-md-table-cell">20%</td>
                                         <td class="text-center"><span class="badge bg-success">Success</span></td>
-                                        <td class="text-center">@fat</td>
-
+                                        <td class="text-center">
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
+                                            </button>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>
@@ -200,8 +278,99 @@
                                         <td class="text-center d-none d-md-table-cell">01/01/0001</td>
                                         <td class="text-center d-none d-md-table-cell">20%</td>
                                         <td class="text-center"><span class="badge bg-success">Success</span></td>
-                                        <td class="text-center">@twitter</td>
-
+                                        <td class="text-center">
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
+                                            </button>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="./img/class-avatar1.jpg" alt="" id="logo-table">
+                                            Classe-77
+                                        </th>
+                                        <td class="text-center d-none d-md-table-cell">01/01/0001</td>
+                                        <td class="text-center d-none d-md-table-cell">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Success</span></td>
+                                        <td class="text-center">
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
+                                            </button>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="./img/class-avatar1.jpg" alt="" id="logo-table">
+                                            Classe-77
+                                        </th>
+                                        <td class="text-center d-none d-md-table-cell">01/01/0001</td>
+                                        <td class="text-center d-none d-md-table-cell">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Success</span></td>
+                                        <td class="text-center">
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
+                                            </button>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="./img/class-avatar1.jpg" alt="" id="logo-table">
+                                            Classe-77
+                                        </th>
+                                        <td class="text-center d-none d-md-table-cell">01/01/0001</td>
+                                        <td class="text-center d-none d-md-table-cell">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Success</span></td>
+                                        <td class="text-center">
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
+                                            </button>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="./img/class-avatar1.jpg" alt="" id="logo-table">
+                                            Classe-77
+                                        </th>
+                                        <td class="text-center d-none d-md-table-cell">01/01/0001</td>
+                                        <td class="text-center d-none d-md-table-cell">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Success</span></td>
+                                        <td class="text-center">
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
+                                            </button>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <img src="./img/class-avatar1.jpg" alt="" id="logo-table">
+                                            Classe-77
+                                        </th>
+                                        <td class="text-center d-none d-md-table-cell">01/01/0001</td>
+                                        <td class="text-center d-none d-md-table-cell">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Success</span></td>
+                                        <td class="text-center">
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-pen fa-2xs"></i>
+                                            </button>
+                                            <button class="mybtnicon">
+                                                <i class="fa-solid fa-trash fa-2xs"></i>
+                                            </button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -213,7 +382,7 @@
                             <div class="accordion" id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                             aria-controls="panelsStayOpen-collapseOne">
                                             Cosa si trova dentro un Buco Nero?
@@ -228,7 +397,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed shadow-none" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                             CR7 è meglio di Messi?
@@ -243,7 +412,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed shadow-none" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                                             Come cavalcare un drago in pantofole.
@@ -259,8 +428,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="col-12 col-md-4">
                         <div class="card my-2">
                             <div class="card-header fs-3">
@@ -269,17 +436,17 @@
                             <div class="card-body">
                                 <ul class="list-group rounded-0 border-2">
                                     <li class="list-group-item d-flex align-items-center">
-                                        <input class="form-check-input me-3" type="checkbox" value="" aria-label="..."
+                                        <input class="form-check-input me-3 shadow-none" type="checkbox" value="" aria-label="..."
                                             checked />
                                         Apportare modifiche al sito
                                     </li>
                                     <li class="list-group-item d-flex align-items-center">
-                                        <input class="form-check-input me-3" type="checkbox" value=""
+                                        <input class="form-check-input me-3 shadow-none" type="checkbox" value=""
                                             aria-label="..." />
                                         Bestemmiare bootstrap
                                     </li>
                                     <li class="list-group-item d-flex align-items-center">
-                                        <input class="form-check-input me-3" type="checkbox" value=""
+                                        <input class="form-check-input me-3 shadow-none" type="checkbox" value=""
                                             aria-label="..." />
                                         Fare una passeggiata altrimenti sclero
                                     </li>
@@ -306,9 +473,6 @@
                         </div>
 
                     </div>
-
-
-
                 </div>
             </div>
         </div>
